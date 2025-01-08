@@ -22,6 +22,7 @@ jobs:
           distribution: 'temurin'  # Use 'temurin' instead of 'adoptopenjdk'
 
       - name: Build with Maven
+        working-directory: ./ci-cd-demo
         run: mvn clean install
 
       - name: Run tests
